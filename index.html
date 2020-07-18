@@ -8,29 +8,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leap Year Checker </title>
     <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to right, #fb6d6d, #7070ff);
+            font-family: sans-serif;
+        }
+
         .box {
-            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 50%;
         }
-        h1{
+
+        h1 {
             background-color: aqua;
             font-size: 45px;
             text-align: center;
         }
-        .text-box{
+
+        .text-box {
             height: 40px;
             width: 78%;
             background-color: aqua;
             color: black;
             font-weight: 700;
             font-size: 16px;
+            border: none;
         }
-        .cheak-btn{
-            height: 46px;
+
+        .cheak-btn {
+            height: 42px;
             width: 20%;
             background-color: aqua;
             font-size: 16px;
             font-weight: 700;
+            border: none;
         }
     </style>
 
@@ -42,8 +58,6 @@
         <input class="text-box" type="text" id="one">
         <input class="cheak-btn" type="button" value="Cheack" onclick="leapyear(one.value);">
     </div>
-
-
     <script src="leapyearchecker.js"></script>
 </body>
 
